@@ -16,9 +16,9 @@ int main() {
   }
   a = (i*C*factor)/(factor - 1);
   printf("\nAnualidad: %1.2f\n\n", a);
-  printf("Anyo\tIntereses\tAmortizacion\n");
+  printf("Anyo\t\tIntereses\t\tAmortizacion\n");
   for (int k=1; k<=A; k++) {
-    printf(" %d\t", k);
+    printf("%d\t\t", k);
     factor = 1;
     for (int j=1; j<k; j++) {
       factor = factor * (i+1);
@@ -26,7 +26,7 @@ int main() {
     B=C*factor - a*(factor - 1)/i;
     interes = i*B;
     amortiz = a - interes;
-    printf("%1.2f\t", interes);
+    printf("%1.2f\t\t", interes);
     printf("%1.2f\n", amortiz);
   }
 }
