@@ -59,6 +59,7 @@ TipoDia DiaDeLaSemana(TipoFecha fecha) {
   if (A < OrigenA) {
     A = A + 100;
   }
+
   IncreAnnos = A - OrigenA;
   IncreBisis = IncreAnnos/4;
   IncreDias = IncreDias + IncreAnnos + IncreBisis;
